@@ -1,0 +1,1176 @@
+/*NAV PILLS/UNDERLINES*/
+
+.nav-one-1 > li > a.active {
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.nav-one-1 > li > a.active:after {
+  content: " ";
+  display: block;
+  width: 2.8em;
+  height: 0.2em;
+  background-color: #38b6ff;
+  border-radius: 2px;
+}
+
+.nav-one-2 > li > a.active {
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.nav-one-2 > li > a.active:after {
+  content: " ";
+  display: block;
+  width: 2.8em;
+  height: 0.2em;
+  background-color: #38b6ff;
+  border-radius: 2px;
+}
+
+.nav-one-3 > li > a.active {
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.nav-one-3 > li > a.active:after {
+  content: " ";
+  display: block;
+  width: 3.6em;
+  height: 0.2em;
+  background-color: #38b6ff;
+  border-radius: 2px;
+}
+
+.nav-two > li > a.active {
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.nav-two > li > a.active:after {
+  content: " ";
+  display: block;
+  width: 5em;
+  height: 0.2em;
+  background-color: #d055ef;
+  color: #d055ef;
+  border-radius: 2px;
+  align-content: inherit;
+  margin: 0px;
+}
+
+.nav-three > li > a.active {
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.nav-three > li > a.active:after {
+  content: " ";
+  display: block;
+  width: 3.5em;
+  height: 0.2em;
+  background-color: #7d2ae7;
+  border-radius: 2px;
+}
+
+.nav-four > li > a.active {
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.nav-four > li > a.active:after {
+  content: " ";
+  display: block;
+  width: 4em;
+  height: 0.2em;
+  background-color: #7ed957;
+  border-radius: 2px;
+}
+
+/* NAV BAR DROP DOWN */
+.navbar-nav > li > .dropdown-menu {
+  background-color: #191818;
+}
+
+.navbar-nav > li > .dropdown-menu a {
+  color: #ffffff;
+}
+
+.navbar-nav > li > .dropdown-menu a:hover {
+  background-color: #0a0a0a;
+}
+
+/* TITLES */
+.welcomeHeader {
+  font-style: bold;
+  color: #004aad;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.welcomeHeader:after {
+  content: " ";
+  display: block;
+  width: 5.5em;
+  height: 0.2em;
+  background-color: #004aad;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .welcomeHeader{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .welcomeHeader:after{
+    visibility: hidden;
+  }
+}
+
+.aboutHeader {
+  font-style: bold;
+  color: #004aad;
+  margin-top: 30px;
+  margin-right: 25px;
+  font-size: 50px;
+  text-align: right;
+}
+
+.aboutHeader:after {
+  content: " ";
+  display: block;
+  width: 4.3em;
+  height: 0.2em;
+  background-color: #004aad;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutHeader{
+    text-align: center;
+    float: none;
+    margin-left: 50%;
+    margin-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .aboutHeader:after{
+    visibility: hidden;
+  }
+}
+
+.aboutHeaderTWO {
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom:10px
+}
+
+.contactLeftHeader {
+  font-style: bold;
+  color: #004aad;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.contactLeftHeader:after {
+  content: " ";
+  display: block;
+  width: 11.3em;
+  height: 0.2em;
+  background-color: #004aad;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .contactLeftHeader{
+    text-align: center;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contactLeftHeader:after{
+    visibility: hidden;
+  }
+}
+
+.contactRightHeader {
+  font-style: bold;
+  color: #004aad;
+  margin-top: 30px;
+  margin-right: 25px;
+  font-size: 50px;
+  width: 500px;
+  text-align: right;
+}
+
+.contactRightHeader:after {
+  content: " ";
+  display: block;
+  width: 10.3em;
+  height: 0.2em;
+  background-color: #004aad;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px){
+  .contactRightHeader{
+    text-align: center;
+    float: none;
+    width: 460px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contactRightHeader:after{
+    visibility: hidden;
+  }
+}
+
+.copyrightHeader {
+  font-style: bold;
+  color: #d055ef;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.copyrightHeader:after {
+  content: " ";
+  display: block;
+  width: 7.8em;
+  height: 0.2em;
+  background-color: #d055ef;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .copyrightHeader{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .copyrightHeader:after{
+    visibility: hidden;
+  }
+}
+
+.publishingSecondHeader {
+  font-style: bold;
+  color: #d055ef;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 900px){
+  .publishingSecondHeader {
+    text-align: center;
+  }
+}
+
+.gallerySectionOneHeader {
+  font-style: bold;
+  color: #7d2ae7;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.gallerySecondHeader {
+  font-style: bold;
+  color: #7d2ae7;
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  .gallerySecondHeader{
+    text-align: center;
+  }
+}
+
+.modalHeader {
+  font-style: bold;
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 30px;
+  text-align: left;
+  float: start;
+  font-weight: bold;
+}
+
+.modalHeaderSub {
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 15px;
+  text-align: left;
+  float: start;
+  font-weight: bold;
+}
+
+.modalHeaderSub:after {
+  content: " ";
+  display: block;
+  margin-top: 15px;
+  width: 2em;
+  height: 0.1em;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.creatorsHeader {
+  font-style: bold;
+  color: #008037;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.creatorsHeader:after {
+  content: " ";
+  display: block;
+  width: 5.5em;
+  height: 0.2em;
+  background-color: #008037;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .creatorsHeader{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .creatorsHeader:after{
+    visibility: hidden;
+  }
+}
+
+/* WRITEN CONTENT */
+
+.welcomeParagraph {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 550px;
+}
+
+@media only screen and (max-width: 600px){
+  .welcomeParagraph{
+    text-align: center;
+    margin: 10px;
+    width: 480px;
+  }
+}
+
+.aboutParagraph {
+  margin-right: 25px;
+  width: 740px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutParagraph{
+    text-align: center;
+    margin: 10px;
+    width: fit-content;
+  }
+}
+
+.contactLeftParagraph {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 550px;
+}
+
+@media only screen and (max-width: 600px){
+  .contactLeftParagraph{
+    text-align: center;
+    margin: 10px;
+    width: fit-content;
+  }
+}
+
+.contactRightParagraph {
+  margin-right: 25px;
+  width: 550px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+  .contactRightParagraph{
+    text-align: center;
+    margin: 10px;
+    width: fit-content;
+  }
+}
+
+.copyrightParagraph {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 550px;
+}
+
+@media only screen and (max-width: 600px){
+  .copyrightParagraph{
+    text-align: center;
+    margin: 10px;
+    width: 480px;
+  }
+}
+
+.modalParagraph{
+  margin-left: 20px;
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.modalParagraphNote{
+  margin-left: 20px;
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #da1313;
+}
+
+.creatorsParagraph {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 550px;
+}
+
+@media only screen and (max-width: 600px){
+  .creatorsParagraph {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 25px;
+    width: 500px;
+  }
+}
+
+.copyrightConText1{
+  margin-left: 50px;
+}
+.copyrightConText2{
+  text-align: right; 
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 900px){
+  .copyrightConText1 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .copyrightConText2 {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+.publishingConText1{
+  margin-left: 50px;
+}
+.publishingConText2{
+  text-align: right; 
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 900px){
+  .publishingConText1 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .publishingConText2 {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+.galleryConText1{
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px){
+  .galleryConText1 {
+    text-align: center;
+  }
+}
+
+/* ABOUT PAGE PROFILE */
+.aboutProfileIcon {
+  margin: 25px;
+  width: 430px;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutProfileIcon {
+    width: 380px;
+  }
+}
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* MODAL CUSTOMISATION */
+.modal-header {
+    background-color: #000000;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+.btn-close {
+   background-color: #ffffff;
+}
+
+.modal-content {
+  background-color: #191818;
+  overflow: hidden;
+
+}
+
+/* PARALEX IMG */
+
+.parallaxImg1 { 
+  background-image: url("img/page_banners/welcome_banner.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg1 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg1 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg2 { 
+  background-image: url("img/page_banners/welcome_banner_alt.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg2 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg2 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg3 { 
+  background-image: url("img/page_banners/about_banner.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg3 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg3 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg4 { 
+  background-image: url("img/page_banners/about_banner_alt.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg4 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg4 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg5 { 
+  background-image: url("img/page_banners/contact_banner.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg5 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg5 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg6 { 
+  background-image: url("img/page_banners/contact_banner_alt.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg6 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg6 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg7 { 
+  background-image: url("img/page_banners/copyright_banner.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg7 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg7 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg8 { 
+  background-image: url("img/page_banners/copyright_banner_alt.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg8{
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg8 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg9 { 
+  background-image: url("img/page_banners/publishing_banner.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg9 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg9 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg10 { 
+  background-image: url("img/page_banners/publishing_banner_alt.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg10 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg10 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg11 { 
+  background-image: url("img/page_banners/gallery_banner.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg11 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg11 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg12 { 
+  background-image: url("img/page_banners/gallery_banner_alt.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg12 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg12 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg13 { 
+  background-image: url("img/page_banners/creators_banner.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg13 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg13 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+.parallaxImg14 { 
+  background-image: url("img/page_banners/creators_banner_alt.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .parallaxImg14 {
+    min-height: 450px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallaxImg14 {
+    min-height: 300px;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+
+/* FORM */
+.contactForm{
+  max-width: 550px;
+  background-color: #0794e6;
+  padding: 10px;
+  margin: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactForm {
+    margin: 25px;
+    max-width: 450px;
+  }
+}
+
+.form-label{
+  color: #ffffff;
+}
+
+.contantFormHeader{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contantFormHeader2{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* EXTRA */
+.specialDiv {
+  overflow: hidden;
+  width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.span {
+  height: 200px;
+  width: 1px;
+  font-weight: 100;
+  background-color: #d055ef;
+  border-radius: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .span {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
+.spanPublishing {
+  height: 400px;
+  width: 1px;
+  font-weight: 100;
+  background-color: #d055ef;
+  border-radius: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .spanPublishing {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
+.spanGallery {
+  height: 500px;
+  width: 30px;
+  font-weight: 100;
+  background-color: #7d2ae7;
+  border-radius: 100px;
+  margin-left: 50px;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .spanGallery {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
+.card{
+  float: start;
+  width: 18rem;
+}
+
+@media only screen and (max-width: 600px){
+  .aboutImg {
+    margin-left: 13%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .card {
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+.gallaryIMG{
+  font-weight: bold;
+  width: 250px;
+  height: 380px;
+  text-align: center;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .gallaryIMG {
+    margin: 30px;
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .danicaProfile {
+    margin-right: 60px;
+  }
+}
+
+.fontButton {
+  margin: 5px;
+}
+
+.footer {
+  background-color: #2c2b2b;
+}
+
+.copyrightSectionFooter {
+  background-color: rgba(10, 10, 10, 0.664);
+}
+
+.aboutMadeWithIcons{
+  width:100px;
+}
+
+.aboutMadeWithIcons2{
+  width:165px;
+}
+
+.aboutMadeWithIconsText{
+  text-align:center;
+}
+
+.contactFirstImg{
+  margin: 25px; 
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 600px){
+  .contactFirstImg{
+    width: 80%;
+  }
+}
+
+.contactIcons{
+  margin-left: 25px; 
+  margin-right: 10px; 
+  color: #004aad
+}
+
+@media only screen and (max-width: 600px){
+  .contactIconsBlock{
+    visibility: hidden;
+  }
+}
+
+.sectionTwoBackground{
+  background-color: #f8f8f8;
+}
+
+.copPubSecondHeader{
+  font-weight: bold; 
+  margin-bottom: 0px;
+}
+
+.gallerySecontion1Text{
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  .gallerySecontion1Text{
+    width: 470px;
+    margin: 25px;
+  }
+}
