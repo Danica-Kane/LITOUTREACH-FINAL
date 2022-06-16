@@ -1,5 +1,50 @@
 <?php include 'config/database.php';?>
 
+<?php
+  $nameInput = $emailInput = $workInput = $descriptionOfWork = $formFile = $creatorBio = '';
+  $nameInputErr = $emailInputErr = $workInputErr = $descriptionOfWorkErr = '';
+
+  //form submit
+  if(isset($_POST['submit'])){
+
+    if(empty($_POST['nameInput'])){
+      $nameInputErr = "name is required";
+    } else {
+      $name = filter_input(INPUT_POST, 'nameInput',
+      FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    }
+
+    if(empty($_POST['emailInput'])){
+      $emailInputErr = "email is required";
+    } else {
+      $email = filter_input(INPUT_POST, 'emailInput',
+      FILTER_SANITIZE_EMAIL);
+    }
+
+    if(empty($_POST['worklInput'])){
+      $workInputErr = "a link is required";
+    } else {
+      $workInput = filter_input(INPUT_POST, 'workInput',
+      FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    }
+
+    if(empty($_POST['descriptionOfWork'])){
+      $descriptionOfWorkErr = "a description is required";
+    } else {
+      $descriptionOfWork = filter_input(INPUT_POST, 'descriptionOfWork',
+      FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    }
+
+    if(empty($nameInputErr) && empty($emailInputErr) && 
+      empty($workInputErr) && empty($descriptionOfWorkErr)) {
+      //Add to database
+      $sql = "INSERT INTO Contact (nameInput, emailInput, workInput, descriptionOfWork, formFile, creatorBio) 
+      VALUES ('$nameInput', '$emailInput', '$workInput', '$descriptionOfWork', '$formFile', '$creatorBio')";
+    }
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -172,6 +217,8 @@
       <form
         class="contactForm container-fluid float-start needs-validation"
         onsubmit="return false;"
+        method="POST"
+        action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
         novalidate
       >
         <p class="contantFormHeader">SUBMIT WORK</p>
