@@ -42,7 +42,7 @@ function changeFontFamily() {
           event.preventDefault();
           event.stopPropagation();
         } else {
-          if (document.getElementById("nameInput").value.length > 0) {
+          if (document.getElementById("txtName").value.length > 0) {
             Toast.fire({
               icon: "success",
               title: "Submitted successfully",
