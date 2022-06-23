@@ -172,90 +172,90 @@
         class="contactForm container-fluid float-start needs-validation"
         onsubmit="return false;"
         novalidate
-        name="frmContact" method="post" action="contact.php"
+        name="frmContact" method="post" action="insert.php"
       >
         <p class="contantFormHeader">SUBMIT WORK</p>
         <p class="contantFormHeader2">Basic...</p>
         <div class="row">
           <div class="mb-3 col">
-            <label for="txtName" class="form-label"
+            <label for="name" class="form-label"
               >Name (or pen-name) :</label
             >
             <input
               type="text"
               class="form-control nameInput"
-              id="txtName"
+              id="name"
               placeholder="name example"
               required
               placeholder="name" value=""
             />
           </div>
           <div class="mb-3 col">
-            <label for="txtEmail" class="form-label">Email address :</label>
+            <label for="email" class="form-label">Email address :</label>
             <input
               type="text"
               class="form-control emailInput"
-              id="txtEmail"
+              id="email"
               placeholder="name@example.com"
               required
-              name="txtEmail" 
+              name="email" 
               value="" 
               required
             />
           </div>
         </div>
         <div class="mb-3">
-          <label for="txtLink" class="form-label">Link to your work :</label>
+          <label for="link" class="form-label">Link to your work :</label>
           <input
             type="text"
             class="form-control workInput"
-            id="txtLink"
+            id="link"
             placeholder="E.G. Amazon Link, Wattpad Link, Google Drive PDF, Other"
             required
-            name="txtLink" 
+            name="link" 
           />
         </div>
         <div class="mb-3">
-          <label for="txtDescription" class="form-label"
+          <label for="description" class="form-label"
             >Brief description of work :</label
           >
           <textarea
             class="form-control descriptionInput"
-            id="txtDescription"
+            id="description"
             type="text"
             rows="3"
             required
-            name="txtDescription"
+            name="description"
           ></textarea>
         </div>
         <p class="contantFormHeader2">If you aren't already a creator...</p>
         <div class="row">
           <div class="mb-3 col">
-            <label for="txtLinkProfile" class="form-label"
+            <label for="linkProfile" class="form-label"
               >Link to profile picture</label
             >
             <input
             type="text"
             class="form-control profileInput"
-            id="txtLinkProfile"
-            name="txtLinkProfile"
+            id="linkProfile"
+            name="linkProfile"
             placeholder="E.G link to google drive file"
             />
           </div>
           <div class="mb-3 col">
-            <label for="txtDescriptionProfile" class="form-label"
+            <label for="descriptionProfile" class="form-label"
               >Bio For Your Creator Profile :</label
             >
             <textarea
               class="form-control"
               type="text"
-              id="txtDescriptionProfile"
-              name="txtDescriptionProfile"
+              id="descriptionProfile"
+              name="descriptionProfile"
               rows="1"
             ></textarea>
           </div>
         </div>
-        <input type="submit" name="Submit" id="Submit" value="Submit Form"  class="btn btn-dark btn-md btn-block">
+        <button type="submit" name="submit" id="Submit" value="Submit Form"  class="btn btn-dark btn-md btn-block">
 
         <br />
       </form>
