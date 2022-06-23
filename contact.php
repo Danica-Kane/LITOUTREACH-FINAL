@@ -1,3 +1,26 @@
+<?php
+$server = "localhost";
+$username = "root";
+$password = "";
+$dbname = "insert";
+
+$conn = mysqli_connect($server, $username, $password, $dbname);
+
+if(isset($_POST['submit']) == "false"){
+       $name = $_POST['name'];
+       $email = $_POST['email'];
+       $link = $_POST['link'];
+       $description = $_POST['description'];
+       $profileLink = $_POST['profileLink'];
+       $descriptionProfile = $_POST['descriptionProfile'];
+
+
+       $query = "insert into contactForm(name, email, link, description, profileLink, descriptionProfile) values('$name', '$email', '$link', '$description', '$profileLink', '$descriptionProfile')";
+
+       $run = mysqli_query($conn, $query) or die(mysqli_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -170,9 +193,9 @@
       <feildset>
       <form
         class="contactForm container-fluid float-start needs-validation"
-        onsubmit="return false;"
         novalidate
-        name="frmContact" method="post" action="insert.php"
+        onsubmit="return false;"
+        name="frmContact" method="POST" action="contact.php"
       >
         <p class="contantFormHeader">SUBMIT WORK</p>
         <p class="contantFormHeader2">Basic...</p>
@@ -188,6 +211,7 @@
               placeholder="name example"
               required
               placeholder="name" value=""
+              name="name"
             />
           </div>
           <div class="mb-3 col">
@@ -231,14 +255,14 @@
         <p class="contantFormHeader2">If you aren't already a creator...</p>
         <div class="row">
           <div class="mb-3 col">
-            <label for="linkProfile" class="form-label"
+            <label for="profileLink" class="form-label"
               >Link to profile picture</label
             >
             <input
             type="text"
             class="form-control profileInput"
-            id="linkProfile"
-            name="linkProfile"
+            id="profileLink"
+            name="profileLink"
             placeholder="E.G link to google drive file"
             />
           </div>
@@ -255,7 +279,7 @@
             ></textarea>
           </div>
         </div>
-        <button type="submit" name="submit" id="Submit" value="Submit Form"  class="btn btn-dark btn-md btn-block">
+        <button type="submit" name="submit" id="Submit" class="btn btn-dark btn-md btn-block">Submit</button>
 
         <br />
       </form>

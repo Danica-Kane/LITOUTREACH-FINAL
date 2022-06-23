@@ -42,13 +42,11 @@ function changeFontFamily() {
           event.preventDefault();
           event.stopPropagation();
         } else {
-          if (document.getElementById("name").value.length > 0) {
             Toast.fire({
               icon: "success",
               title: "Submitted successfully",
             });
             setTimeout(location.reload.bind(location), 3000);
-          }
         }
 
         form.classList.add("was-validated");
@@ -70,3 +68,4 @@ const Toast = Swal.mixin({
     toast.addEventListener("mouseleave", Swal.resumeTimer);
   },
 });
+
