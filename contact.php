@@ -7,17 +7,20 @@ $dbname = "insert";
 $conn = mysqli_connect($server, $username, $password, $dbname);
 
 if(isset($_POST['submit']) == "false"){
-       $name = $_POST['name'];
-       $email = $_POST['email'];
-       $link = $_POST['link'];
-       $description = $_POST['description'];
-       $profileLink = $_POST['profileLink'];
-       $descriptionProfile = $_POST['descriptionProfile'];
+
+  sleep(3);
+
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $link = $_POST['link'];
+  $description = $_POST['description'];
+  $profileLink = $_POST['profileLink'];
+  $descriptionProfile = $_POST['descriptionProfile'];
 
 
-       $query = "insert into contactForm(name, email, link, description, profileLink, descriptionProfile) values('$name', '$email', '$link', '$description', '$profileLink', '$descriptionProfile')";
+  $query = "insert into contactForm(name, email, link, description, profileLink, descriptionProfile) values('$name', '$email', '$link', '$description', '$profileLink', '$descriptionProfile')";
 
-       $run = mysqli_query($conn, $query) or die(mysqli_error());
+  $run = mysqli_query($conn, $query) or die(mysqli_error());
 }
 ?>
 
@@ -187,14 +190,13 @@ if(isset($_POST['submit']) == "false"){
       </div>
     </div>
 
-    <!--Section Two-->
+    <!--Section Two         onsubmit="return false;" -->
     <div class="specialDiv sectionTwoBackground">
       <!-- Section Two form -->
       <feildset>
       <form
         class="contactForm container-fluid float-start needs-validation"
         novalidate
-        onsubmit="return false;"
         name="frmContact" method="POST" action="contact.php"
       >
         <p class="contantFormHeader">SUBMIT WORK</p>
