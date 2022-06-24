@@ -190,7 +190,7 @@ if(isset($_POST['submit']) == "false"){
       </div>
     </div>
 
-    <!--Section Two         onsubmit="return false;" -->
+    <!--Section Two-->
     <div class="specialDiv sectionTwoBackground">
       <!-- Section Two form -->
       <feildset>
