@@ -17,7 +17,6 @@ if(isset($_POST['submit']) == "false"){
   $profileLink = $_POST['profileLink'];
   $descriptionProfile = $_POST['descriptionProfile'];
 
-
   $query = "insert into contactForm(name, email, link, description, profileLink, descriptionProfile) values('$name', '$email', '$link', '$description', '$profileLink', '$descriptionProfile')";
 
   $run = mysqli_query($conn, $query) or die(mysqli_error());
