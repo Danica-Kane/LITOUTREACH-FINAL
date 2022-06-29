@@ -1,27 +1,29 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
-$dbname = "insert";
+  $server = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "insert";
 
-$conn = mysqli_connect($server, $username, $password, $dbname);
+  $conn = mysqli_connect($server, $username, $password, $dbname);
 
-if(isset($_POST['submit']) == "false"){
+  if(isset($_POST['submit']) == "false"){
 
-  sleep(3);
+     sleep(3);
 
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $link = $_POST['link'];
-  $description = $_POST['description'];
-  $profileLink = $_POST['profileLink'];
-  $descriptionProfile = $_POST['descriptionProfile'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $link = $_POST['link'];
+    $description = $_POST['description'];
+    $profileLink = $_POST['profileLink'];
+    $descriptionProfile = $_POST['descriptionProfile'];
 
-  $query = "insert into contactForm(name, email, link, description, profileLink, descriptionProfile) values('$name', '$email', '$link', '$description', '$profileLink', '$descriptionProfile')";
+    $query = "insert into contactForm(name, email, link, description, profileLink, descriptionProfile) values('$name', '$email', '$link', '$description', '$profileLink', '$descriptionProfile')";
 
   $run = mysqli_query($conn, $query) or die(mysqli_error());
-}
+  }
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -196,7 +198,7 @@ if(isset($_POST['submit']) == "false"){
       <form
         class="contactForm container-fluid float-start needs-validation"
         novalidate
-        name="frmContact" method="POST" action="contact.php"
+        name="frmContact" method="POST" action=""
       >
         <p class="contantFormHeader">SUBMIT WORK</p>
         <p class="contantFormHeader2">Basic...</p>
