@@ -8,7 +8,7 @@
 
   if(isset($_POST['submit']) == "false"){
 
-     sleep(3);
+    sleep(3);
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -19,7 +19,7 @@
 
     $query = "insert into contactForm(name, email, link, description, profileLink, descriptionProfile) values('$name', '$email', '$link', '$description', '$profileLink', '$descriptionProfile')";
 
-  $run = mysqli_query($conn, $query) or die(mysqli_error());
+    $run = mysqli_query($conn, $query) or die(mysqli_error());
   }
 ?>
 
@@ -201,6 +201,7 @@
         name="frmContact" method="POST" action=""
       >
         <p class="contantFormHeader">SUBMIT WORK</p>
+        <label for="" class="form-label" style="color: red;">(this form is currently deactivated)</label>
         <p class="contantFormHeader2">Basic...</p>
         <div class="row">
           <div class="mb-3 col">
